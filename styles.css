@@ -8,6 +8,9 @@
 
 body {
     background-color: #F5F8FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header {
@@ -37,6 +40,7 @@ header {
     font-size: 14px;
     line-height: 16.8px;
     font-family: 'Lato', sans-serif;
+    white-space: nowrap;
 }
 
 .navigation ul li button {
@@ -211,7 +215,7 @@ header {
 
 .flexInput {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .form {
@@ -272,6 +276,55 @@ header {
     font-weight: 700;
   }
 
+  @media screen and (min-width: 1000px) {
+    .addmargin {
+        margin-left: 2rem;
+    }
+    .flexInput {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    /* .section {
+        background-color: blueviolet;
+    } */
+
+    /* .section {
+        width: 54%;
+    }
+    
+    .section_section {
+        width: 35%;
+    } */
+
+    .email {
+        width: 100%;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .addmargin {
+        margin-left: 0;
+    }
+    .flexInput {
+        display: block;
+    }
+
+    .section {
+        width: 54%;
+    }
+    
+    .section_section {
+        width: 35%;
+    }
+
+    .email {
+        width: 100%;
+    }
+  }
+
   @media screen and (max-width: 481px) {
     .main {
         flex-direction: column;
@@ -292,7 +345,7 @@ header {
     }
 
     .navigation ul li button {
-        padding: 0.5rem 1rem;
+        padding: 0.2rem 0.5rem;
         margin-top: 0.4rem;
     }
 

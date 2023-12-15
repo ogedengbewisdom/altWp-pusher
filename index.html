@@ -65,12 +65,14 @@
                 <div class="form">
                     <div class="form_control">
                         <label for="card">Credit Card</label>
-                        <div style="position: relative;" >
-                        <input type="card" id="card" name="card" placeholder="Card Number"/>
-                        <span style="position: absolute; top: 46%; right: 10px; transform: translateY(-50%); cursor: pointer; display: flex; align-items: center; color: #646E7A; font-size: 14px; font-size: 'Lato'; font-weight: 400;">
-                            <p style="margin-right: 2rem;">MM / YY</p>
-                            <p>CVC</p>
-                        </span>
+                        <div style="position: relative; display: flex;">
+                        <input type="card" id="card" name="card" placeholder="Card Number" style="flex: 3; border-right: none; border-top-right-radius: 0; border-bottom-right-radius: 0;"/>
+                        <!-- <span style="position: absolute; top: 46%; right: 10px; transform: translateY(-50%); cursor: pointer; display: flex; align-items: center; color: #646E7A; font-size: 12px; font-size: 'Lato'; font-weight: 400;"> -->
+                            <!-- <p style="margin-right: 2rem;">MM / YY</p>
+                            <p>CVC</p> -->
+                            <input placeholder="MM / YY" type="text" style="flex: 1; padding-left: 0; border-left: none; border-right: none; border-radius: 0;"  />
+                            <input placeholder="CVC" type="text" style="flex: 1; border-left: 0; border-top-left-radius: 0; border-bottom-left-radius: 0;" />
+                        <!-- </span> -->
                     </div>
                     </div>
                 </div>
@@ -100,7 +102,7 @@
         <section class="section_section">
             <div>
             <p class="section_section_p1">Freelancer</p>
-            <div style="position: relative; margin-bottom: 5.5rem;" class="section_section_div">
+            <div style="position: relative; margin-bottom: 4.5rem;" class="section_section_div">
                 <span class="span1">$</span>
                 <p class="section_section_p2"> 99 </p>
                 <span class="span2">/ year</span>
